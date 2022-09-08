@@ -2,7 +2,7 @@
 /**
  * main - print a text using printf()
  *
- * Description : the text >with proper grammar, but the outcome is a piece of art,
+ * Description : \"with proper grammar, but the outcome is a piece of art,\"
  *
  * Return: return always 0
  */
