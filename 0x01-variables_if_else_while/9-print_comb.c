@@ -1,9 +1,9 @@
 #include <stdlib.h>
 #include <stdio.h>
 /**
- *  main - use putchar() to print base 10
+ *  main - use printf() to print base 10
  *
- *  Description: printing all single digit numbers of base 10 starting from 0
+ *  Description: printing 0 to 9 separated by commas and space
  *
  *  Return: Always 0 (Success)
  */
@@ -15,6 +15,11 @@ int main(void)
 	while (c < 072)
 	{
 		putchar((c));
+		if (c != 071)
+		{
+			putchar(',');
+			putchar(' ');
+		}
 		c++;
 	}
 	putchar('\n');
