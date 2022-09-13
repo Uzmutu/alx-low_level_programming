@@ -3,7 +3,7 @@
 #include "main.h"
 /**
  * _abs - give the absolute
- * @int: variable tested
+ * @value: variable tested
  *
  * Description: compute the absolute value of an integer
  *
