@@ -9,24 +9,26 @@
  */
 int main(void)
 {
-	int n1;
-	int n2;
-	int n3;
+	unsigned long n1;
+	unsigned long n2;
+	unsigned long n3;
 	int i;
 
 	n1 = 1;
 	n2 = 2;
-	printf("%d, %d", n1, n2);
+	printf("%lu, %lu", n1, n2);
 	for (i = 0; i < 50; i++)
 	{
 		n3 = n1 + n2;
-		printf(", %d", n3);
+		printf(", %lu", n3);
 
 		n1 = n2;
 		n2 = n3;
 
+		if (i == 49)
+			printf("\n");
+
 	}
-	printf("\n");
 
 	return (0);
 }
