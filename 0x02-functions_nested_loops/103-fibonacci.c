@@ -28,7 +28,7 @@ int main(void)
 		number_1 = number_2;
 		number_2 = number_3;
 	}
-	printf("The sum of even number in the 50 first fibonacci tree is %lu\n", sum);
+	printf("%lu\n", sum);
 
 	return (0);
 }
