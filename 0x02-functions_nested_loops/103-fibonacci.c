@@ -17,10 +17,11 @@ int main(void)
 
 	number_1 = 0;
 	number_2 = 1;
-	for (i = 0; i < 4000000; i++)
+	sum = 0;
+	for (i = 0; i < 49; i++)
 	{
 		number_3 = number_1 + number_2;
-		if (number_3 % 2 == 0)
+		if (number_3 < 4000000 && number_3 % 2 == 0)
 		{
 			sum = sum + number_3;
 		}
