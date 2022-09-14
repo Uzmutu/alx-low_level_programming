@@ -19,12 +19,14 @@ int main(void)
 	for (i = 0; i < 98; i++)
 	{
 		n3 = n1 + n2;
-		printf("%lu, ", n3);
+		printf("%lu", n3);
 
 		n1 = n2;
 		n2 = n3;
 
-		if (i == 97)
+		if (i < 97)
+			printf(", ");
+		else
 			printf("\n");
 
 	}
