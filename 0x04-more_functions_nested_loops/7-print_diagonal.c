@@ -2,23 +2,27 @@
 #include <unistd.h>
 #include "main.h"
 /**
- * print_diagonal - function that print some diagonal
- * @n: variable for the line
+ * print_diagonal - function that print diagonal line
+ * @n: variable for the triangle size
  *
- * Description: print n diagonal if n greater than 0
+ * Description: print triangle of n diagonal line if size greater than 0
  *
- * Return: return diagonal
+ * Return: return diagonal line
  */
 void print_diagonal(int n)
 {
+	int i;
+	int k;
+
 	if (n <= 0)
 		_putchar('\n');
-	else
+	for (i = 1; i <= n; i++)
 	{
-		int i;
-
-		for (i = 1; i <= n; i++)
-			_putchar('\\');
+		for (k = 1; k <= i; k++)
+		{
+			_putchar(' ');
+		}
+		_putchar(92);
 		_putchar('\n');
 	}
 }
