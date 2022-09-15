@@ -25,7 +25,7 @@ int main(void)
 			number = number / i;
 			if (number == 1)
 			{
-				printf("%lu\n", largest);
+				printf("%ld\n", largest);
 				break;
 			}
 		}
