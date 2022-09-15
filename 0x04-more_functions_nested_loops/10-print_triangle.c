@@ -3,9 +3,9 @@
 #include "main.h"
 /**
  * print_triangle - function that print # triangle
- * @n: variable for the number of line
+ * @size: variable for the triangle size
  *
- * Description: print triangle of n line if n greater than 0
+ * Description: print triangle of size line if size greater than 0
  *
  * Return: return line
  */
