@@ -17,15 +17,15 @@ int main(void)
 	int k;
 	int s;
 	char range[] = "0123456789abcdefghijklmnopkrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
-	char password[60];
+	char password[58];
 
 	i = 0;
 	k = 0;
 	s = 0;
 	srand(time(NULL));
-	while (s != 2850)
+	while (s != 2772)
 	{
-		while ((2850 - 122) > s)
+		while ((2772 - 122) > s)
 		{
 			j = rand() % 62;
 			password[i] = range[j];
@@ -34,7 +34,7 @@ int main(void)
 		}
 		while (range[k])
 		{
-			if (range[k] == (2850 - s))
+			if (range[k] == (2772 - s))
 			{
 				password[i] = range[k];
 				s = s + range[k];
