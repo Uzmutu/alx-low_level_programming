@@ -15,16 +15,21 @@ int main(void)
 	int i;
 	int N;
 	int randomizer;
+	char numbers[];
+        char letter[];
+        char LETTER[];
+        char symbols[];
+        char password[];
 
 	i = 0;
 	N = 20;
 	randomizer = 0;
 	srand((unsigned int)(time(NULL)));
-	char numbers[] = "0123456789";
-	char letter[] = "abcdefghijklmnoqprstuvwyzx";
-	char LETTER[] = "ABCDEFGHIJKLMNOQPRSTUYWVZX";
-	char symbols[] = "!@#$^&*?";
-	char password[N];
+	numbers[] = "0123456789";
+	letter[] = "abcdefghijklmnoqprstuvwyzx";
+	LETTER[] = "ABCDEFGHIJKLMNOQPRSTUYWVZX";
+	symbols[] = "!@#$^&*?";
+	password[N];
 	randomizer = rand() % 4;
 	for (i = 0; i < N; i++) 
 	{
