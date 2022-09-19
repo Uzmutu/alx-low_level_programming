@@ -16,13 +16,12 @@ int main(void)
 	int j;
 	int k;
 	int s;
-	char range[62];
+	char range[] = "0123456789abcdefghijklmnopkrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
 	char password[60];
 
 	i = 0;
 	k = 0;
 	s = 0;
-	range = "0123456789abcdefghijklmnopkrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
 	srand(time(NULL));
 	while (s != 2850)
 	{
