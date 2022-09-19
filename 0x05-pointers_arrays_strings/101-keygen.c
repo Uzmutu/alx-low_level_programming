@@ -16,7 +16,7 @@ int main(void)
 	int j;
 	int k;
 	int s;
-	char range[];
+	char range[62];
 	char password[60];
 
 	i = 0;
@@ -35,7 +35,7 @@ int main(void)
 		}
 		while (range[k])
 		{
-			if (c[k] == (2850 - s))
+			if (range[k] == (2850 - s))
 			{
 				password[i] = range[k];
 				s = s + range[k];
