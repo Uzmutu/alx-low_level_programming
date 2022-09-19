@@ -28,7 +28,7 @@ void puts_half(char *str)
 	{
 		n = (length_of_the_string - 1) / 2;
 		count = (length_of_the_string - n);
-		while (count <= length_of_the_string)
+		while (str[count] != '\0' && count <= length_of_the_string)
 		{
 			_putchar(str[count]);
 			count++;
@@ -39,7 +39,7 @@ void puts_half(char *str)
 	{
 		half = length_of_the_string / 2;
 		count = half;
-		while (count <= length_of_the_string)
+		while (str[count] != '\0' && count <= length_of_the_string)
 		{
 			_putchar(str[count]);
 			count++;
