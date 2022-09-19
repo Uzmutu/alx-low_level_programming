@@ -22,7 +22,7 @@ int main(void)
 	i = 0;
 	k = 0;
 	s = 0;
-	range[] = "0123456789abcdefghijklmnopkrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
+	range = "0123456789abcdefghijklmnopkrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
 	srand(time(NULL));
 	while (s != 2850)
 	{
