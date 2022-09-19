@@ -16,7 +16,7 @@ int main(void)
 	int j;
 	int k;
 	int s;
-	char range[] = "0123456789abcdefghijklmnopkrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
+	char range[] = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopkrstuvwxyz";
 	char password[58];
 
 	i = 0;
