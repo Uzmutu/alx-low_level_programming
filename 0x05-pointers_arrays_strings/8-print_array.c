@@ -18,12 +18,12 @@ void print_array(int *a, int n)
 
 	n -= 1;
 	max = n;
-	for (i = 0; i <= max; i++)
+	for (count = 0; count <= max; count++)
 	{
-		printf("%d", a[i]);
-		if (i != max)
+		printf("%d", a[count]);
+		if (count != max)
 			printf(", ");
 	}
-	printf('\n');
+	printf("\n");
 
 }
