@@ -12,7 +12,7 @@
  *
  * Return: return string
  */
-int puts_half(char *str)
+void puts_half(char *str)
 {
 	int length_of_the_string;
 	int half;
