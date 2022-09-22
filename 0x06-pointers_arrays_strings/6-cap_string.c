@@ -15,7 +15,7 @@ char *cap_string(char *s)
 	int separators[] = {',', ';', '.', '?', '"', '(', ')',
 		'{', '}', ' ', '\n', '\t'};
 
-	for (i = 0; s[i] != '\0'; i++)
+	while (s[i] != '\0')
 	{
 		if (i == 0)
 		{
@@ -31,6 +31,7 @@ char *cap_string(char *s)
 					s[i] = s[i] - 32;
 			}
 		}
+		i++;
 	}
 	return (s);
 }
