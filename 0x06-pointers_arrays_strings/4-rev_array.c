@@ -11,13 +11,19 @@
  */
 void reverse_array(int *a, int n)
 {
-	int str[n];
-	int j;
-	int i;
+	int start_of_array;
+	int end_of_array;
+	int temporary_int;
 
-	j = n - 1;
-	for (i = 0; i < n; i++)
-		str[j - i] = a[i];
-	for (i = 0; i < n; i++)
-		a[i] = str[i];
+	start_of_array = 0;
+	end_of_array = n - 1;
+
+	while (start_of_array < end_of_array)
+	{
+		temporary_int = a[start_of_array];
+		a[start_of_array] = a[end_of_array];
+		a[end_of_array] = temporary_int;
+		start_of_array++;
+		end_of_array--;
+	}
 }
