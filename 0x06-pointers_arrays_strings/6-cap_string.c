@@ -12,8 +12,8 @@ char *cap_string(char *s)
 {
 	int i;
 	int j;
-	char separators[] = {',', ';', '.', '?', '"', '(', ')',
-		'{', '}', ' ', '\n', '\t'};
+	char separators[] = {32, 33, 40, 41, 44, 46, '"', 59, 63, 10, 9,
+	123, 125};
 
 	while (s[i] != '\0')
 	{
