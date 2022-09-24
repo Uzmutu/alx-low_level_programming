@@ -15,10 +15,10 @@ char *cap_string(char *s)
 	i = 0;
 	if (s[i] == '\0')
 		return (s);
-	else
+	else if (s[i] != '\0')
 	{
 		while (s[i] != '\0')
-		{	
+		{
 			if (s[i] >= 'a' && s[i] <= 'z')
 			{
 				if (i == 0)
