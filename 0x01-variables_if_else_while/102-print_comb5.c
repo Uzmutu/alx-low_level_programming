@@ -11,34 +11,24 @@
  */
 int main(void)
 {
-	int a;
-	int b;
-	int c;
-	int d;
+	int n;
+	int k;
 
-	for (a = 0; a <= 9; a++)
+	for (n = 0; n < 99; n++)
 	{
-		for (b = 0; b <= 9; b++)
+		for (k = n + 1; k < 100; k++)
 		{
-			for (c = 0; c <= 9; c++)
-			{
-				for (d = 1; d <= 9; d++)
-				{
-					putchar((a % 10) + '0');
-					putchar((b % 10) + '0');
-					putchar(' ');
-					putchar((c % 10) + '0');
-					putchar((d % 10) + '0');
-					if (a == 9 && b == 8 && c == 9 && d == 9)
-						continue;
-					putchar(',');
-					putchar(' ');
-				}
-
-			}
+			putchar((n / 10) + '0');
+			putchar((n % 10) + '0');
+			putchar(' ');
+			putchar((k / 10) + '0');
+			putchar((k % 10) + '0');
+			if (n == 98 && k == 99)
+				continue;
+			putchar(',');
+			putchar(' ');
 		}
 	}
-
 	putchar('\n');
 	return (0);
 }
