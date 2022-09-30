@@ -22,19 +22,19 @@ int main(int argc, char *argv[])
 	}
 	cents = 0;
 	money = atoi(argv[1]);
-	do {
-		cents++;
+	for (cents = 0; money > 0; cents++)
+	{
 		if (money - 25 >= 0)
-			money -= 25;
+			money = money - 25;
 		else if (money - 10 >= 0)
-			money -= 10;
+			money = money - 10;
 		else if (money - 5 >= 0)
-			money -= 5;
+			money = money - 5;
 		else if (money - 2 >= 0)
-			money -= 2;
+			money = money - 2;
 		else if (money - 1 >= 0)
-			money -= 1;
-	} while (money);
+			money = money - 1;
+	}
 	printf("%d\n", cents);
 	return (0);
 }
