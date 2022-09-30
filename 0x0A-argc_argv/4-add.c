@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <ctype.h>
 /**
  * main - entry point
  * @argc: count the number of command line arguments
@@ -20,7 +21,7 @@ int main(int argc, char *argv[])
 	{
 		for (j = 0; argv[i][j] != '\0'; j++)
 		{
-			if (!atoi(argv[i]))
+			if (isalpha(argv[i][j]))
 			{
 				printf("Error\n");
 				return (1);
