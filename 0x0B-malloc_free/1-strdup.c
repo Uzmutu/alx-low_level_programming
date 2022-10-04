@@ -49,13 +49,13 @@ char *_strdup(char *str)
 	char *ptr;
 	size_t len;
 
-	len = _strlen_recursion(str);
 	if (str == 0)
 		return (NULL);
+	len = _strlen_recursion(str);
 	ptr = malloc(len + 1);
+	if (ptr == 0)
+		return (NULL);
 	if (ptr)
 		_memcpy(ptr, str, len + 1);
-	else
-		return (NULL);
 	return (ptr);
 }
