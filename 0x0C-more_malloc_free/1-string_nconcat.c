@@ -29,10 +29,10 @@ int _strlen_recursion(char *s)
  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	int i;
-	int len1;
-	int len2;
-	int len;
+	unsigned int i;
+	unsigned int len1;
+	unsigned int len2;
+	unsigned int len;
 	char *ptr;
 
 	len1 = _strlen_recursion(s1);
