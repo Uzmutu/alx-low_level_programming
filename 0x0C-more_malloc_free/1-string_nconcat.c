@@ -35,12 +35,16 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	unsigned int len;
 	char *ptr;
 
+	if (!s1)
+		s1 = "";
+	if (!s2)
+		s2 = "";
 	len1 = _strlen_recursion(s1);
 	len2 = _strlen_recursion(s2);
 	if (n < len2)
 		n = len2;
 	len = len1 + len2;
-	ptr = malloc(sizeof(char) * (len) + 1);
+	ptr = malloc(sizeof(char *) * (len) + 1);
 	if (ptr == NULL)
 		return (NULL);
 	for (i = 0; i < len; i++)
