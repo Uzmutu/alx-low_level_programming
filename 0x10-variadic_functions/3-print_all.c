@@ -41,7 +41,7 @@ void print_all(const char * const format, ...)
 			case 's':
 				ptr = va_arg(j, char *);
 				if (!ptr)
-					printf("(nil)%s", separator);
+					ptr = "(nil)";
 				printf("%s%s", ptr, separator);
 				break;
 		}
