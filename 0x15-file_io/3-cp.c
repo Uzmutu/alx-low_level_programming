@@ -29,23 +29,23 @@ int main(int argc, char *argv[])
  */
 void cp(char *a, char *b)
 {
-	int start, end, r_only;
-	char *buffer;
+	int start, end, r_only, w_only;
+	char buffer[1024];
 
-	buffer = malloc(sizeof(char) * 1024);
 	start = open(a, O_RDONLY);
-	if (!a || start == -1)
-	{
-		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", a);
-		exit(98);
-	}
-	end = open(b, O_CREAT | O_WRONLY | O_TRUNC, 0664);
+	end = open(b, O_CREAT | O_WRONLY | O_APPEND);
 	while ((r_only = read(start, buffer, 1024)) > 0)
 	{
-		if (write(end, buffer, r_only) != r_only || end == -1)
+		if (start == -1 || r_only == -1)
+		{
+			dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", a);
+			exit(98);
+		}
+		w_only = write(end, buffer, r_only);
+		if (end == -1 || w_only == -1)
 		{
 			dprintf(STDERR_FILENO, "Error: Can't write to file %s\n", b);
-			exit(98);
+			exit(99);
 		}
 	}
 	if (r_only == -1)
