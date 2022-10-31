@@ -1,5 +1,5 @@
 #include "main.h"
-void cp(char *a, char *b);
+void cp(const char *a, const char *b);
 /**
  * main - entry point
  * @argc: number of environnement argument
