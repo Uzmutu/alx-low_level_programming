@@ -27,7 +27,7 @@ int main(int argc, char *argv[])
  *
  * Return: void
  */
-void cp(char *a, char *b)
+void cp(const char *a, const char *b)
 {
 	int start, end, r_only, w_only;
 	char buffer[1024];
